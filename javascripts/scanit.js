@@ -5,16 +5,18 @@
       const global = window.scanit;
 
       if (location.href === global.previousURL) {
-        console.debug('The URL is not changed, skip to load instagram embeds.')
         return;
       }
 
       global.previousURL = location.href;
 
-      // Load embeds when the page is changed.
       if (window.instgrm) {
-        console.info('The URL is changed, Load instagram embeds.')
-        window.instgrm.Embeds.process();
+        // Load embeds when the URL is changed.
+        // It calls process method after loading the page.
+        setTimeout(() => {
+          console.info('The URL is changed, Load instagram embeds.')
+          window.instgrm.Embeds.process();
+        }, 500)
       }
     })
   };
