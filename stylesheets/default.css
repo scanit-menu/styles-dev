@@ -15967,3 +15967,6 @@ readers do not read off random characters that represent icons */
 .fa-solid {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900; }
+
+.scanit-footer {
+  white-space: normal; }

@@ -15968,5 +15968,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 6 Free';
   font-weight: 900; }
 
+.scanit-footer {
+  white-space: normal; }
+
 :root {
-  --bg-color: #f4f3e7 !important; }
+  --bg-color: $background-color !important; }
