@@ -15969,7 +15969,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 .scanit-footer {
-  white-space: normal; }
+  white-space: normal !important; }
 
 :root {
-  --bg-color: $background-color !important; }
+  --bg-color: #f4f3e7 !important; }
